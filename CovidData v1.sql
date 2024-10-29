@@ -56,8 +56,8 @@ WHERE continent is not null
 GROUP BY continent
 ORDER BY TotalDeathCount DESC;
 
--- Showing continents with the 
-
+-- Upper one has a problem to show the correct number of deaths
+-- Use continent is null 
 SELECT location, MAX(cast(total_deaths as int)) as TotalDeathCount
 FROM PortfolioProject..CovidDeaths
 WHERE continent is null
